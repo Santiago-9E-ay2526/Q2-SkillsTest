@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Enroll Now</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!-- BOOTSTRAP -->
+     <!-- Latest compiled and minified CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+   
+<!-- NAVBAR-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="mt-3 mb-3 container-fluid">
+               <a class="navbar-brand" href="#">
+                    <img src="Logo.png" alt="logo" height="50px" width="50px">
+               </a>
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                         <li class="nav-item" style="">Home</li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="index.html" target="_self">Home</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="about.html" target="_self">About Us</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="enroll.html" target="_self">Enroll</a>
+                         </li>
+                         <li class="nav-item"><a class="nav-link" href="contact.html" target="_self">Contact Us</a>
+                         </li>
+                    </ul>
+                    <form class="d-flex p-2">
+                         <input class="form-control me-2" type="text" placeholder="Search">
+                         <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+          </div>
+     </nav>
+     
+     <h1 style="color: white">OBMC Student Enrollment Form</h1>
+     <p style="text-align: center; color: white">Fill the form below to enroll for the upcoming school year.</p>
+     <br>
+
+     <!-- FORM -->
+     <div class="container-fluid mt-3 mb-3 p-3">
+     <div class="container p-5 mt-3 text-dark" style="border-radius: 30px; background-color: rgba(255, 255, 255, 0.915);">
+          <div class="row">
+               <div class="col-12">
+               </div>
+          </div>
+
+          <form>
+               <h3>Student Information</h3>
+               <!-- NAME -->
+               <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-6">
+                         <label class="form-label" for="fname">First name</label>
+                         <input type="text" class="form-control" id="fname" name="fname">
+                    </div>
+                    <div class="col-12 col-md-6">
+                         <label class="form-label" for="lname">Last name</label>
+                         <input type="text" class="form-control" id="lname" name="lname">
+                    </div>
+               </div>
+
+               <div class="row g-3 mb-3">
+                    <!-- BIRTH DATE -->
+                         <div class="col-12 col-md-4">
+                              <label class="form-label" for="birthdate">Birthdate</label>
+                              <input type="date" class="form-control" id="birthdate" name="birthdate">
+                         </div>
+
+                    <!-- GENDER -->
+                    <div class="col-12 col-md-4">
+                         <label class="form-label" for="gender">Gender</label>
+                         <select class="form-select" id="gender" name="gender">
+                              <option selected disabled>Choose...</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="other">Other</option>
+                         </select>
+                    </div>
+
+                    <!-- GRADE LEVEL -->
+                    <div class="col-12 col-md-4">
+                         <label class="form-label" for="grade">Grade Level</label>
+                         <select class="form-select" id="grade" name="grade">
+                              <option selected disabled>Choose...</option>
+                              <option value="Casa">Casa</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                         </select>
+                    </div>
+               </div>
+
+          <h3>Contact Details</h3>
+               <!-- EMAIL -->
+               <div class="mb-3">
+                    <label class="form-label" for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email@email.com">
+               </div>
+
+               <!-- CONTACT NUMBER -->
+               <div class="mb-3">
+                    <label class="form-label" for="contactNumber">Contact Number</label>
+                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="09123456789">
+               </div>
+
+          <h3>Other Information</h3>
+               <div class="mb-3">
+                    <label class="form-label">Mode of Learning</label>
+                    <div class="form-check">
+                         <input class="form-check-input" type="radio" name="modeOfLearning" id="online" value="online">
+                         <label class="form-check-label" for="online">Online</label>
+                    </div>
+                    <div class="form-check">
+                         <input class="form-check-input" type="radio" name="modeOfLearning" id="faceToFace" value="faceToFace">
+                         <label class="form-check-label" for="faceToFace">Face-to-Face</label>
+                    </div>
+               </div>
+
+               <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" id="confirmInfo">
+                    <label class="form-check-label" for="confirmInfo">I confirm that the information provided is true and complete.</label>
+               </div>
+
+               <!-- BUTTON -->
+               <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+               </div>
+
+          </form>
+     </div>
+     </div>
+
+     <footer class="text-center py-3 bg-dark text-light mt-auto fixed-bottom">
+     &copy; 2025 Copyright</footer>
+
+
+</body>
+</html>
